@@ -508,11 +508,17 @@ main .bullets span {
 }
 .testi .container > img {
     max-width: 100%;
+    display: none;
+}
+@media (min-width: 992px) {
+    .testi .container > img {
+        display: revert;
+    }
 }
 .testi .content-container {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
 }
 @media (min-width: 992px) {
